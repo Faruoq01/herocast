@@ -132,17 +132,18 @@ export function UserAuthForm({ signupOnly }: { signupOnly: boolean }) {
     }
 
     await hydrateChannels();
-    const { data, error } = await supabase.auth.signInAnonymously();
-    if (error) {
-      setUserMessage("Error setting up local account.");
-      setIsLoading(false);
-      return;
-    }
-
-    posthog.identify(data?.user?.id, { isLocalOnly: true });
-    setUserMessage("Setup done. Welcome to the herocast experience!");
-    router.push("/feed");
-    setIsLoading(false);
+    console.log("on track")
+    // const { data, error } = await supabase.auth.signInAnonymously();
+    // if (error) {
+    //   setUserMessage("Error setting up local account.");
+    //   setIsLoading(false);
+    //   return;
+    // }
+    
+    // posthog.identify(data?.user?.id, { isLocalOnly: true });
+    // setUserMessage("Setup done. Welcome to the herocast experience!");
+    // router.push("/feed");
+    // setIsLoading(false);
   };
 
   async function logIn() {

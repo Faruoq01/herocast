@@ -421,7 +421,7 @@ export const useAccountStore = create<AccountStore>()(persist(mutative(store),
     // },
   }));
 
-const fetchAllChannels = async (): Promise<ChannelType[]> => {
+const fetchAllChannels = async (): Promise<ChannelType[]> => {console.log(data, "data ..../")
   let channelData = [];
   let hasMoreChannels = false;
   console.log('fetching existing channels in DB');
