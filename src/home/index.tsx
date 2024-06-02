@@ -228,7 +228,7 @@ const Home = ({ children }: { children: React.ReactNode }) => {
                       alt="herocast"
                     />
                     <h2 className="text-2xl font-bold leading-7 text-foreground sm:truncate sm:tracking-tight">
-                      herocast
+                      BC Cast
                     </h2>
                   </div>
                   <nav className="flex flex-1 flex-col">
@@ -270,7 +270,7 @@ const Home = ({ children }: { children: React.ReactNode }) => {
         <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-background px-6">
           <div className="flex h-16 shrink-0 items-center">
             <h2 className="text-2xl font-bold leading-7 text-foreground sm:truncate sm:tracking-tight">
-              herocast
+              BC Cast
             </h2>
           </div>
           <div className="flex flex-col justify-between">
